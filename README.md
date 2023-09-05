@@ -1,6 +1,3 @@
-Certainly, here's an updated README file for your GitHub repository with the requested changes:
-
----
 
 # Customer Churn Prediction and Retention
 
