@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Churn Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            width: 60%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        label, select, input {
+            display: block;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        select, input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        select {
+            height: 40px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Customer Churn Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age">
+
+        <label for="subscription_length">Subscription Length (Months):</label>
+        <input type="text" id="subscription_length" name="subscription_length">
+
+        <label for="monthly_bill">Monthly Bill:</label>
+        <input type="text" id="monthly_bill" name="monthly_bill">
+
+        <label for="total_usage_gb">Total Usage GB:</label>
+        <input type="text" id="total_usage_gb" name="total_usage_gb">
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+
+        <label for="location">Location:</label>
+        <select id="location" name="location">
+            <option value="Chicago">Chicago</option>
+            <option value="Houston">Houston</option>
+            <option value="Los Angeles">Los Angeles</option>
+            <option value="Miami">Miami</option>
+            <option value="New York">New York</option>
+        </select>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
