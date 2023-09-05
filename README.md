@@ -47,7 +47,7 @@ Customer churn prediction and retention are critical aspects of business managem
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/YourUsername/YourRepositoryName.git
+   git clone (https://github.com/Imashish-45/Customer-Churn_prediction.git)
    ```
 2. Install Python packages
    ```sh
